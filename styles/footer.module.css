@@ -1,0 +1,118 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "text"
+    "badges"
+    "social"
+    "links";
+  background: var(--primary-color);
+  padding: 1rem;
+  width: 100%;
+}
+
+.linkcontainer {
+  grid-area: links;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  background: var(--light-1);
+  border-radius: 1rem;
+}
+
+.linkcontainer a {
+  color: white;
+}
+
+.linkcontainer a:hover {
+  color: var(--primary-color);
+}
+
+.pcontainer {
+  grid-area: text;
+}
+
+.p {
+  color: var(--light-text);
+  text-align: justify;
+  margin: 1rem;
+}
+
+.p a {
+  color: var(--light-2);
+}
+
+.p a:hover {
+  color: white;
+}
+
+.badges {
+  grid-area: badges;
+  background-color: var(--primary-background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  transform: scale(0.9);
+}
+
+.socialmediacontainer {
+  grid-area: social;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  height: 100%;
+}
+
+.imgcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5rem;
+}
+
+.socialmediacontainer div:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 750px) {
+  .badges {
+    flex-direction: row;
+  }
+
+  .imgcontainer {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .container {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "badges text"
+      "social links";
+  }
+  .badges {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    grid-template-columns: 0.5fr 1fr 5fr;
+    grid-template-areas:
+      "social badges text"
+      "social badges links";
+  }
+
+  .socialmediacontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

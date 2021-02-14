@@ -11,7 +11,6 @@ interface NavItemsArray {
 export default function NavParent() {
 	const [largeNav, setLargeNav] = useState(false);
 
-	//Array of <li> elements to be generated as below. Rendering of expansion window depends on index value here. Order matters.
 	const navItemsArray: NavItemsArray[] = [
 		{ navText: "Who we are", url: "/who-we-are" },
 		{ navText: "What we do", url: "/what-we-do" },
@@ -67,24 +66,31 @@ export default function NavParent() {
 										// }
 									}}
 								>
-									<Link href={`${navObject.url}`}>{navObject.navText}</Link>
+									<Link href={`${navObject.url}`}>
+										{navObject.navText}
+									</Link>
 								</li>
 							);
 						} else {
 							return (
 								<li
 									key={i}
-									className={largeNav ? styles.lilarge : styles.li}
+									className={
+										largeNav ? styles.lilarge : styles.li
+									}
 									onClick={() => {
 										if (process.browser) {
 											if (window.innerWidth <= 950) {
-												document.getElementById("overlaynav")!.style.width =
-													"0%";
+												document.getElementById(
+													"overlaynav"
+												)!.style.width = "0%";
 											}
 										}
 									}}
 								>
-									<Link href={`${navObject.url}`}>{navObject.navText}</Link>
+									<Link href={`${navObject.url}`}>
+										{navObject.navText}
+									</Link>
 								</li>
 							);
 						}

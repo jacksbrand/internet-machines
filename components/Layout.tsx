@@ -1,6 +1,9 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 
+import Header from "../components/common/header";
+import Footer from "../components/common/footer";
+
 type Props = {
 	children?: ReactNode;
 	title?: string;
@@ -24,9 +27,9 @@ export default function Layout({
 					content="Modern Web and Systems Development"
 				/>
 			</Head>
-			<header></header>
+			<Header />
 			<main>{children}</main>
-			<footer></footer>
+			<Footer />
 		</div>
 	);
 }

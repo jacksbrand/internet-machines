@@ -1,50 +1,51 @@
 body * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: white;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: white;
+	background-color: #000c29;
 }
 
 li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 /* Base Styles */
 html {
-  width: 100vw;
-  max-width: 100%;
-  font-size: 62.5%;
+	width: 100vw;
+	max-width: 100%;
+	font-size: 62.5%;
 }
 
 body {
-  overflow-x: hidden;
-  box-sizing: border-box;
-  width: 100vw;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	width: 100vw;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	text-rendering: optimizeLegibility;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-weight: normal;
+	font-weight: normal;
 }
 
 h1 {
-  font-size: 4rem;
+	font-size: 4rem;
 }
 
 h2 {
-  font-size: 3rem;
+	font-size: 3rem;
 }
 
 h3 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }

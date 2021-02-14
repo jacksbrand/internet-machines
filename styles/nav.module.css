@@ -1,0 +1,49 @@
+.container {
+	width: 100%;
+	padding: 1rem 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 40vh;
+	text-align: center;
+}
+
+.li a,
+.lifirst a {
+	color: var(--light-text);
+	font-size: 2rem;
+}
+
+.li a:hover,
+.lifirst a:hover {
+	cursor: pointer;
+}
+
+.lilarge a,
+.lifirstlarge a {
+	transition: 0.2s;
+	color: var(--primary-color);
+	padding: 0.9rem;
+	border-radius: 1rem;
+}
+
+.lilarge a:hover,
+.lifirstlarge a:hover {
+	transition: 0.2s;
+	background-color: var(--primary-color);
+	color: var(--light-text);
+	cursor: pointer;
+}
+
+.ullarge {
+	width: 60vw;
+	display: flex;
+	justify-content: space-between;
+}

@@ -1,0 +1,75 @@
+.container,
+.containerfilled {
+	transition: 0.5s;
+	min-height: var(--header-height);
+	width: 1;
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.61);
+	z-index: 10;
+}
+
+.containerfilled {
+	transition: 0.5s;
+	background: white;
+	box-shadow: 0 0.5rem 1rem rgb(148, 148, 148);
+}
+
+.logo {
+	margin: auto 0.5rem;
+	width: 70%;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.navcontainer {
+	min-height: var(--header-height);
+	width: 15%;
+	min-height: min-content;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 12;
+}
+
+.svg {
+	z-index: 100;
+	fill: var(--primary-color);
+}
+
+.svgcross {
+	z-index: 100;
+	fill: var(--light-text);
+}
+
+.hideNav,
+.showNav {
+	transition: 0.5s;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--primary-color);
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	transform: translateX(-100vw);
+}
+
+.showNav {
+	transition: 0.5s;
+	transform: translateX(0);
+}
+
+@media only screen and (min-width: 1100px) {
+	.logo {
+		width: 30%;
+	}
+
+	.navcontainer {
+		width: 70%;
+	}
+}
