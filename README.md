@@ -1,4 +1,4 @@
-# Verus Machina
+<!-- # Verus Machina
 
 ## Modern Web and Sytem Development
 
@@ -10,4 +10,4 @@
 
 \_\_\_apparatus of interrelated parts with separate functions, used in the
 performance of work
-# internet-machines
+# internet-machines -->
