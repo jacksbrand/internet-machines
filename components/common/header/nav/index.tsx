@@ -12,7 +12,11 @@ export default function NavParent() {
 	const [largeNav, setLargeNav] = useState(false);
 
 	const navItemsArray: NavItemsArray[] = [
-		{ navText: "Build your machine", url: "/build" },
+		{ navText: "Build", url: "/build" },
+		{ navText: "Our Machines", url: "/machines" },
+		{ navText: "Ethos", url: "/ethos" },
+		{ navText: "Insight", url: "/insight" },
+		{ navText: "Login", url: "/login" },
 	];
 
 	useEffect(() => {

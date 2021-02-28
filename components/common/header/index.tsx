@@ -44,7 +44,7 @@ export default function Header() {
 			>
 				<div className={styles.logo}>
 					<Link href="/">
-						<div>IM</div>
+						<img src={"./logo-black-alpha.png"}></img>
 					</Link>
 				</div>
 

@@ -5,11 +5,6 @@ import styles from "../styles/index.module.css";
 const IndexPage = () => {
 	return (
 		<article className={styles.container}>
-			<div>
-				<p>Internet</p>
-				<h1>IM</h1>
-				<p>machines</p>
-			</div>
 			<FlipBar />
 			<div>
 				<h2>WEB &</h2>
