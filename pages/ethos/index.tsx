@@ -16,11 +16,6 @@ export default function Ethos() {
 				entertains, teaches, organises, creates or maybe something the
 				world hasn't invented yet.
 			</p>
-			<h3>Machines:</h3>
-			<q>
-				An apparatus using power and having several parts, each with a
-				definite function and together performing a particular task.
-			</q>
 			<p>
 				Internet Machines are able to take the latest technology and
 				apply it to your business. Whether you're selling shoestrings,
